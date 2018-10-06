@@ -1,0 +1,59 @@
+body , html
+{
+	height: 100%;
+	margin: 0;
+}
+
+.bg 
+{
+	background-image: url("../images/landingPage.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	background-position: center;
+	-webkit-filter: blur(2px); /* Safari 6.0 - 9.0*/ 
+    filter: blur(2px);
+    position: relative;
+
+}
+
+.landingPage_button
+{
+	position: absolute;
+	text-align: center;
+	height : 30%;
+	width : 40%;
+	margin : auto;
+	top: 35%;
+	left : 30%;
+	background : none;
+	border-width: 5px;
+	border-radius: 15px;
+	border-color: white;
+	/*font-size: 45px;*/
+	color: white;
+	 -webkit-transition-duration: 0.6s; /* Safari */
+    transition-duration: 0.6s;
+}
+
+.landingPage_button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.ml2 {
+  font-weight: 100;
+  font-size: 55px;
+}
+
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+/*i
+{
+	margin-left : 5%;
+	text-align: center;
+}*/
