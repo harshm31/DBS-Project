@@ -1,0 +1,74 @@
+.form
+{
+	width : 50%;
+	height : 50%;
+	position: absolute;
+	margin-top : 10%;
+	left : 25%;
+	right : 25%;
+	z-index: 1000;
+	-webkit-filter: blur(2px); /* Safari 6.0 - 9.0*/ 
+    filter: blur(0px);
+}
+body , html
+{
+	height: 100%;
+	margin: 0;
+	background-image: url("../images/landingPage.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	/*-webkit-filter: blur(2px);  Safari 6.0 - 9.0 
+    filter: blur(2px);*/
+    position: relative;
+    overflow-y: hidden;
+}
+.submitButton
+{
+	margin-top: 20px;
+	width : 50%;
+	margin-left: 20%;
+}
+
+.quoteBox
+{
+	margin : 2%;
+	color: white;
+	-webkit-transition-duration: 0.3s; /* Safari */
+    transition-duration: 0.3s;
+}
+.quoteBox:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+.author
+{
+	position: relative;
+	left : 80%;
+}
+.quoteText , .author
+{
+	font-size: 20px;
+	display: inline-block;
+  	line-height: 2em;
+}
+
+.signUp , .forgotPassword
+{
+	margin-top: 5%;
+	text-align: center;
+	padding: 5%;
+}
+
+.signUp
+{
+	width : 250px;
+	margin-left: 10%;
+}
+.forgotPassword
+{
+	width: 250px;
+	margin-right:10%;
+}

@@ -1,9 +1,9 @@
-function redirectToHome()
+function redirectToLogin()
 {
 	$(".landingPage_button").click(function()
 	{
 		console.log("clicked");
-		var url = "http://www.goodreads.com";
+		var url = "loginPage.html";
     	window.location.href = url;
 	});
 }
@@ -35,6 +35,6 @@ function animateText()
 
 $(document).ready(function()
 {
-	redirectToHome();
+	redirectToLogin();
 	animateText();
 });
