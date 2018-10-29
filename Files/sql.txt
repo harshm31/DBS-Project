@@ -1,0 +1,32 @@
+CREATE DATABASE library DEFAULT CHARACTER SET utf8;
+
+CREATE TABLE users
+(
+	user_id INTEGER NOT NULL AUTO_INCREMENT ,
+	email varchar(100),
+	password varchar(100),
+	dob date ,
+
+	PRIMARY KEY (user_id),
+	INDEX(email)
+);
+
+CREATE TABLE books
+(	
+	book_isbn INTEGER,
+	comments varchar(10000),
+	pubdate varchar(50),
+	series_index integer,
+	title varchar(200),
+	rating integer , 
+
+	PRIMARY KEY(book_isbn),
+	INDEX(title)
+);
+
+CREATE TABLE authors (
+	author_id NOT NULL AUTO_INCREMENT INTEGER,
+	author_name varchar(200) UNIQUE , 
+
+	PRIMARY KEY(author_name)	
+);
