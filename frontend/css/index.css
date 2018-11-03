@@ -1,0 +1,262 @@
+body
+{
+	overflow-x:hidden;
+	margin-bottom:5px;
+	font-family: American Typewriter, serif;
+	background-color:#111;
+	
+}
+
+nav
+{
+	margin-top:3em;
+	color:#fff;
+}
+li
+{
+	margin-right:2em;
+}
+ul
+{
+	list-style-type: none;
+}
+#title,#browse
+{
+	font-size:1.5em;
+	color:#fff;
+}
+#search_input
+{
+	font-size:1.3em;
+	border-radius :5px;
+	margin-top:1em;
+	color: rgba(0,0,0,0.6);
+	width:60%;
+	text-align: center;
+}
+input::placeholder
+{
+	color: rgba(0,0,0,0.6);
+}
+#search_button
+{
+	font-size:0.em;
+	position: relative;
+	bottom:1px;
+	color: #fff;
+	margin-left:10px;
+}
+.search-button
+{
+	background: linear-gradient(to right,#0f2027,#203a43,#2c5364);
+	border-radius:5px;
+	color:#fff;
+	width:35%;
+}
+#search_div
+{
+	margin-top:1.5em;
+}
+
+#header
+{
+	/*background: linear-gradient(to right,#333333,#dd1818);*/
+	background: linear-gradient(to right,#1f1c18,#8e0e00);
+	height: auto;
+	width:100%;
+}
+.banner
+{
+
+	display: table;
+	width:100%;
+	height:450px;
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background : transparent url('https://images.wallpaperscraft.com/image/dark_black_and_white_abstract_black_background_76353_1920x1080.jpg') 0 0 no-repeat fixed;
+	/*background: transparent url('https://www.phostell.com/wp-content/uploads/2017/11/Bookcase-Books-Business-Colors-Indoors-Knowledge-Library-Literature-Research-School-Shelf-University-Wisdom-1920x1080.jpeg') 0 0 no-repeat fixed ;*/
+}
+
+.banner-head
+{
+	vertical-align: middle;
+	display: table-cell;
+	text-transform: uppercase;
+	font-family: Oswald Bold;
+	font-size:2em;
+	color:#fff;
+    font-weight: bold;
+    text-shadow: 0 2px 2px #111;
+
+}
+
+#sub_header_title
+{
+	margin-top:1em;
+	text-align: center;
+	color: #fff;
+	margin-bottom:1em;
+	font-size:2.5em;
+	margin-left:1em;
+	position: relative;
+	right:30px;
+}
+
+hr
+{
+	border:1.5px solid #fff;
+}
+.content-block
+{
+	width:25%;
+	margin-top:1.5em;
+	position: relative;
+	z-index: 1;
+}
+.content-img
+{
+	margin-right:0.3em;
+	margin-top: 0.5em;
+	margin-bottom:1em;
+	height:375px;
+}
+/*.content-img-2
+{
+	height: 375px;
+	margin-right:0.3em;
+	margin-top:2.5em;
+}*/
+#content
+{
+	margin-left:3.5em;
+	margin-bottom:5em;
+	margin-right:2em;
+}
+.details_box
+{
+	display: none;
+	position: absolute;
+	left:10px;
+	color: #111;
+}
+
+a
+{
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: none;
+}
+a:visted
+{
+	text-decoration: none;
+	color: white;
+}
+a:link
+{
+	text-decoration: none;
+}
+
+#myCarousel
+{
+	background:transparent url("../images/quote_image.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height:200px;
+	display: table;
+}
+.quote-content
+{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	font-weight:300;
+}
+.quote-text
+{
+	text-align: center;
+	font-size:1.5em;
+	margin-top:2.3em;
+	line-height: 24px;
+    color: #fff;
+    margin-bottom: 16px;
+}
+.quote-author
+{
+	text-align: center;
+	font-size:2em;
+	/*color:#f2d13e;*/
+	color:#500000;
+	margin-top:0.9em;
+}
+.indicator
+{
+	color:#500000;
+}
+body .popover 
+{
+	max-width:400px;
+}
+.pop-detail
+{
+	color: #fff;
+	font-size:1em;
+}	
+.pop-title
+{
+	color: #fff;
+	font-size:1.3em;
+	text-align: center;
+}
+.pop-content
+{
+	font-size:1em;
+	font-weight: bold;
+	color:#fff;
+
+}
+.popover
+{
+	background: linear-gradient(to bottom,#8e0e00 ,#1f1c18);
+	width:30%;
+	border-radius:10px;
+}
+.popover-title
+{
+	background-color:/*#6C0808*/#111;
+	border:none;
+	color: #fff;
+}
+.popover.top > .arrow:after
+{
+	border-right-color: #111;
+}
+
+/*media queries*/
+
+@media all and (max-width: 450px)
+{
+	#header
+	{
+		width: 100%;
+		height:20vh;
+	}
+	nav
+	{
+		margin-top:3em;
+		color:#fff;
+	}
+	li
+	{
+		margin-right:0.5em;
+	}
+	#content
+	{
+		margin-left:1.5em;
+		margin-bottom:3em;
+		margin-right:1em;
+	}
+}

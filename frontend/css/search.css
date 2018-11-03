@@ -1,0 +1,158 @@
+body
+{
+	overflow-x:hidden;
+	margin-bottom:5px;
+	font-family: American Typewriter, serif;
+	background-color: #111;
+}
+
+nav
+{
+	margin-top:3em;
+	color:#fff;
+}
+li
+{
+	margin-right:2em;
+}
+ul
+{
+	list-style-type: none;
+}
+#title,#home,#browse
+{
+	font-size:1.5em;
+	color:#fff;
+}
+#header
+{
+	background: linear-gradient(to right,#1f1c18,#8e0e00);
+	margin-bottom:0;
+	height: auto;
+	width:100%;
+}
+a
+{
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: none;
+}
+a:visted
+{
+	text-decoration: none;
+	color: white;
+}
+a:link
+{
+	text-decoration: none;
+}
+#search-box
+{
+	text-align: center;
+	margin:2em 0.5em 2em 1em;
+	border-radius : 5px;
+	width:75%;
+	display: inline-block;
+	font-size: 1.5em;
+	color:rgba(0,0,0,0.6);
+}
+#search-button
+{
+	display: inline-block;
+	width:20%;
+	font-size: 1.3em;
+	margin-right:0em;
+	border:none;
+	text-align: center;
+	position: relative;
+	bottom:3px;
+	color: #fff;
+}
+.search-button
+{
+	background: linear-gradient(to right,#0f2027,#203a43,#2c5364);
+	border-radius:5px;
+	color:#fff;
+}
+
+#rule
+{
+	margin-left:3em;
+	margin-right:3em;
+	border-color: #fff;
+	border:2px groove #fff;
+}
+
+.content-block
+{
+	width:25%;
+	margin-top:1em;
+}
+.content-img
+{
+	margin-right:0.3em;
+	height:375px;
+	margin-top:1em;
+	margin-bottom: 2em;
+}
+#content3
+{
+	margin-left:3em;
+	margin-bottom:2em;
+	margin-right:2em;
+}
+.search_title
+{
+	margin-left:3em;
+	text-align: left;
+	margin-top: -0.9em;
+	color: #fff;
+	text-transform: capitalize;
+	font-size:1.5em;
+}
+.input
+{
+	text-transform: lowercase;
+	margin-left:0.5em;
+}
+body .popover 
+{
+	max-width:400px;
+}
+.pop-detail
+{
+	color: #fff;
+	font-size:1em;
+}	
+.pop-title
+{
+	color: #fff;
+	font-size:1.3em;
+	text-align: center;
+}
+.pop-content
+{
+	font-size:1em;
+	font-weight: bold;
+	color:#fff;
+
+}
+.popover
+{
+	background: linear-gradient(to bottom,#8e0e00 ,#1f1c18);
+	width:30%;
+	border-radius:10px;
+}
+.popover-title
+{
+	background-color:/*#6C0808*/#111;
+	border:none;
+	color: #fff;
+	text-transform: capitalize;
+}
+.popover.top > .arrow:after
+{
+	border-right-color: #111;
+}

@@ -1,0 +1,224 @@
+body
+{
+	overflow-x:hidden;
+	margin-bottom:0;
+	font-family: American Typewriter, serif;
+	background-color: #111;
+}
+
+nav
+{
+	margin-top:3em;
+	color:#fff;
+}
+li
+{
+	margin-right:2em;
+}
+ul
+{
+	list-style-type: none;
+}
+#title,#profile
+{
+	font-size:1.5em;
+	color:#fff;
+}
+#header
+{
+	background: linear-gradient(to right,#1f1c18,#8e0e00);
+	margin-bottom:0;
+	height: auto;
+	width:100%;
+}
+#search_input
+{
+	font-size:1.3em;
+	border-radius :5px;
+	margin-top:1em;
+	color: rgba(0,0,0,0.6);
+	width:60%;
+	text-align: center;
+}
+input::placeholder
+{
+	color: rgba(0,0,0,0.6);
+}
+#search_button
+{
+	font-size:0.em;
+	position: relative;
+	bottom:1px;
+	color: #fff;
+	margin-left:10px;
+}
+.search-button
+{
+	background: linear-gradient(to right,#0f2027,#203a43,#2c5364);
+	border-radius:5px;
+	color:#fff;
+	width:35%;
+}
+#search_div
+{
+	margin-top:1.5em;
+}
+.banner
+{
+
+	display: table;
+	width:100%;
+	height:250px;
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	/*background: transparent url('https://www.artsfon.com/pic/201511/1920x1080/artsfon.com-76607.jpg') 0 0 no-repeat fixed ;*/
+	background: transparent url('http://sf.co.ua/12/12/wallpaper-2509469.jpg') 0 0 no-repeat fixed ;
+	margin-bottom: 1.2em;
+}
+
+#options
+{
+	width: 25%;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 1.5em;
+	vertical-align: middle;
+	display: table-cell;
+	background:white;
+	margin-top: 6em;
+	font-weight:bold;
+	/*color: rgba(128, 0, 0,1.0);*/
+	color: rgba(0,0,0,0.6);
+	border:2px solid rgba(0,0,0,0.6);
+}
+#genre_title
+{
+	font-size:2em;
+	text-align: left;
+	margin-left:3em;
+	color: #fff;
+	text-transform: capitalize;
+}
+#rule
+{
+	margin-left:3em;
+	margin-right:3em;
+	border:1.5px solid #fff;
+}
+
+.content-block
+{
+	width:25%;
+	margin-top:1em;
+}
+.content-img
+{
+	margin-right:0.3em;
+	height:375px;
+}
+.content-img-2
+{
+	height: 375px;
+	margin-right:0.3em;
+	margin-top:1.5em;
+}
+#content2
+{
+	margin-left:3.5em;
+	margin-right:2.5em;
+	margin-bottom:3em;
+}
+#myCarousel
+{
+	background:transparent url("../images/quote_image.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height:200px;
+	display: table;
+}
+.quote-content
+{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	font-weight:300;
+}
+.quote-text
+{
+	text-align: center;
+	font-size:1.5em;
+	margin-top:2.5em;
+	line-height: 24px;
+    color: #fff;
+    margin-bottom: 16px;
+}
+.quote-author
+{
+	text-align: center;
+	font-size:2em;
+	color:#500000;
+	margin-top:0.8em;
+}
+.indicator
+{
+	color:#500000;
+}
+a
+{
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: none;
+}
+a:visted
+{
+	text-decoration: none;
+	color: white;
+}
+a:link
+{
+	text-decoration: none;
+}
+body .popover 
+{
+	max-width:400px;
+}
+.pop-detail
+{
+	color: #fff;
+	font-size:1em;
+}	
+.pop-title
+{
+	color: #fff;
+	font-size:1.3em;
+	text-align: center;
+}
+.pop-content
+{
+	font-size:1em;
+	font-weight: bold;
+	color:#fff;
+
+}
+.popover
+{
+	background: linear-gradient(to bottom,#8e0e00 ,#1f1c18);
+	width:30%;
+	border-radius:10px;
+}
+.popover-title
+{
+	background-color:/*#6C0808*/#111;
+	border:none;
+	color: #fff;
+	text-transform: capitalize;
+}
+.popover.top > .arrow:after
+{
+	border-right-color: #111;
+}

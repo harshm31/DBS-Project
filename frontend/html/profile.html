@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/oswald">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" type="text/css" href="../css/profile.css">
+	<script type="text/javascript" src="../scripts/login_Page.js"></script>
+	<script type="text/javascript" src="../scripts/profile.js"></script>
+</head>
+<body>
+
+<div id="header" class="container-fluid">
+		<div class="row ">
+			<div class="col-sm-6">
+				<nav class="navbar navbar-expand-sm bg-dark">
+					<!-- items of navbar -->
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a id="title" class="nav-link" href="#"> <i class="fas fa-book" id="title_icon"></i> HM Library</a>
+						</li>
+						<li class="nav-item">
+							<a href="browseBooks.html" class="nav-link" id="browse"><i class="fas fa-globe" id="browse_icon"></i> Browse </a>
+						</li>
+
+					</ul>
+				</nav>
+			</div>
+			<div class="col-sm-2"></div>
+
+			<div class="col-sm-4" id="search_div">
+				<input type="text" name="search" placeholder="Search" id="search_input"> 
+				<button class="btn search-button" id="search_button">
+					    Search 
+				</button>
+				
+			</div>
+		</div>
+</div>
+
+<div id="user_info_box">
+	<p id="box-title"> Details </p>
+	<div id="user_info">
+	</div>
+</div>
+
+
+</body>
+</html>

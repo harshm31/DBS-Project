@@ -1,0 +1,148 @@
+CREATE DATABASE library DEFAULT CHARACTER SET utf8;
+
+CREATE TABLE users
+(
+	reg_no varchar(20) NOT NULL ,
+	email varchar(100),
+	name varchar(100),
+	contact_no varchar(100),
+	password varchar(100),
+
+	PRIMARY KEY (reg_no),
+	INDEX(name)
+);
+
+CREATE TABLE books
+(	
+	book_isbn varchar(30) NOT NULL ,
+	comments varchar(10000),
+	pubdate varchar(50),
+	series_index integer,
+	title varchar(200),
+	rating integer , 
+
+	PRIMARY KEY(book_isbn),
+	INDEX(title)
+);
+
+CREATE TABLE authors (
+	author_id NOT NULL INTEGER AUTO INCREMENT,
+	author_name varchar(200) UNIQUE, 
+
+	PRIMARY KEY(author_id)	
+);
+
+CREATE TABLE publishers 
+(
+	publisher_id INTEGER NOT NULL AUTO_INCREMENT,
+	publisher_name varchar(200) UNIQUE , 
+
+	PRIMARY KEY(publisher_id)
+);
+
+CREATE TABLE series 
+(
+	series_id INTEGER NOT NULL AUTO_INCREMENT , 
+	series_name varchar(200) UNIQUE , 
+
+	PRIMARY KEY(series_id)
+
+);
+
+CREATE TABLE genre (
+	genre_id INTEGER NOT NULL AUTO_INCREMENT , 
+	genre_name varchar(100) UNIQUE ,
+
+	PRIMARY KEY(genre_id)
+);
+
+CREATE TABLE wishlist (
+	book_isbn varchar(30) , 
+	reg_no varchar(20)  , 
+
+	PRIMARY KEY(book_isbn,reg_no),
+
+	CONSTRAINT FOREIGN KEY(reg_no) REFERENCES users(reg_no)
+	ON UPDATE CASCADE ON DELETE CASCADE , 
+
+	CONSTRAINT FOREIGN KEY(book_isbn) REFRENCES books(book_isbn)
+	ON UPDATE CASCADE ON DELETE CASCADE 
+
+);
+
+CREATE TABLE written_by (
+	author_name varchar(200) , 
+	book_isbn varchar(30) , 
+
+	PRIMARY KEY(book_isbn),
+
+	CONSTRAINT FOREIGN KEY(author_name) REFERENCES authors(author_name)
+	ON UPDATE CASCADE ON DELETE CASCADE , 
+
+	CONSTRAINT FOREIGN KEY(book_isbn) REFRENCES books(book_isbn)
+	ON UPDATE CASCADE ON DELETE CASCADE 
+
+);
+
+CREATE TABLE published_by (
+	publisher_name varchar(200) , 
+	book_isbn varchar(30) , 
+
+	PRIMARY KEY(book_isbn),
+
+	CONSTRAINT FOREIGN KEY(publisher_name) REFERENCES publishers(publisher_name)
+	ON UPDATE CASCADE ON DELETE CASCADE , 
+
+	CONSTRAINT FOREIGN KEY(book_isbn) REFERENCES books(book_isbn)
+	ON UPDATE CASCADE ON DELETE CASCADE 
+
+);
+
+CREATE TABLE belongs_to (
+	series_name varchar(200) , 
+	book_isbn varchar(30) , 
+
+	PRIMARY KEY(book_isbn),
+
+	CONSTRAINT FOREIGN KEY(series_name) REFERENCES series(series_name)
+	ON UPDATE CASCADE ON DELETE CASCADE , 
+
+	CONSTRAINT FOREIGN KEY(book_isbn) REFERENCES books(book_isbn)
+	ON UPDATE CASCADE ON DELETE CASCADE 
+
+);
+
+CREATE TABLE category (
+	genre_name varchar(100) , 
+	book_isbn varchar(30) , 
+
+	PRIMARY KEY(book_isbn),
+
+	CONSTRAINT FOREIGN KEY(genre_name) REFERENCES genre(genre_name)
+	ON UPDATE CASCADE ON DELETE CASCADE , 
+
+	CONSTRAINT FOREIGN KEY(book_isbn) REFERENCES books(book_isbn)
+	ON UPDATE CASCADE ON DELETE CASCADE 
+
+);
+
+CREATE TABLE format (
+	format_id INTEGER NOT NULL AUTO_INCREMENT , 
+	format_type varchar(100) UNIQUE , 
+
+	PRIMARY KEY(format_id)
+);
+
+CREATE TABLE type (
+	format_type varchar(100) , 
+	book_isbn varchar(30) , 
+
+	PRIMARY KEY(book_isbn),
+
+	CONSTRAINT FOREIGN KEY(format_type) REFERENCES format(format_type)
+	ON UPDATE CASCADE ON DELETE CASCADE , 
+
+	CONSTRAINT FOREIGN KEY(book_isbn) REFERENCES books(book_isbn)
+	ON UPDATE CASCADE ON DELETE CASCADE 
+
+);

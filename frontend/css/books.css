@@ -1,0 +1,100 @@
+body
+{
+	overflow-x:hidden;
+	font-family: American Typewriter, serif;
+	background-color:#111;
+}
+
+nav
+{
+	margin-top:3em;
+	color:#fff;
+}
+li
+{
+	margin-right:2em;
+}
+ul
+{
+	list-style-type: none;
+}
+#title,#browse
+{
+	font-size:1.5em;
+	color:#fff;
+}
+#header
+{
+	background: linear-gradient(to right,#1f1c18,#8e0e00);
+	margin-bottom:0;
+	height: auto;
+	width:100%;
+}
+a
+{
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: none;
+}
+a:visted
+{
+	text-decoration: none;
+	color: white;
+}
+a:link
+{
+	text-decoration: none;
+}
+
+.cover
+{
+	height:80vh;
+	width:auto;
+	float:left;
+	margin:0 2em 0 0;
+}
+
+.sub_text,.comments
+{
+	font-size:0.8em;
+	color:#fff;
+}
+.main_text
+{
+	font-size:1.3em;
+	color:#fff;
+}
+.title
+{
+	text-align: center;
+	text-transform: capitalize;
+	font-size:1.8em;
+	color: #fff;
+}
+#content4
+{
+	margin-right:2em;
+	margin-left:2em;
+	margin-bottom: 2em;
+}
+
+#order_button
+{
+	display: block;
+	width: 100%;
+	font-size: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+#read_button
+{
+	display: block;
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%
+	font-size: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}

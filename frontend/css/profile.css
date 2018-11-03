@@ -1,0 +1,36 @@
+#user_info_box
+{
+	background-color: white;
+	width: 30%;
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-top: 5%;
+	margin-bottom: 10%;
+	height: 30%;
+	color: #111;
+	font-size: 30px;
+	text-align: center;
+}
+
+#box-title
+{
+	color : #8e0e00;
+	text-align: center;
+}
+
+
+.user_subtitles
+{
+	font-size: 20px;
+	color: #203a43;
+	text-align: center;
+}
+
+hr
+{
+	background: linear-gradient(to right,#1f1c18,#8e0e00);
+	height: 2px;
+}
+
+
+
